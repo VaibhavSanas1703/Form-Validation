@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form Validation</title>
+   <!-- Link css custom file -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- UIcons CDN -->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+   <!-- Google Fonts Link -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div id="form-container">
+      <form id="form">
+         <h1>Sign up</h1>
+         <div class="input-box">
+            <input type="text" id="name" placeholder="Name" autofocus>
+            <i class="uil uil-user show-name"></i>
+            <p id="error_name"></p>
+         </div>
+         <div class="input-box">
+            <input type="number" id="number" placeholder="Mobile Number">
+            <i class="uil uil-phone show-number"></i>
+            <p id="error_number"></p>
+         </div>
+         <div class="input-box">
+            <input type="email" id="email" placeholder="Email">
+            <i class="uil uil-envelope-minus show-email"></i>
+            <p id="error_email"></p>
+         </div>
+         <div class="input-box pass-container">
+            <input type="password" id="password" placeholder="Password" maxlength="10">
+            <i class="uil uil-eye-slash show-password" id="show-hide"></i>
+            <div class="pass-indicator">
+               <p id="indicator-text"></p>
+               <div class="main-indicator"></div>
+            </div>
+         </div>
+         <div class="input-box btn">
+            <button type="submit" id="btn" onclick="return checkError()">Sign up</button>
+         </div>
+         <div class="sign-with">
+            <p id="sign-p">Sign in with :</p>
+            <div class="icons">
+               <i class="uil uil-google"></i>
+               <i class="uil uil-facebook-f"></i>
+            </div>
+         </div>
+      </form>
+   </div>
+   <script src="js/app.js"></script>
+</body>
+</html>

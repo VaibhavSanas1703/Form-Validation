@@ -1,0 +1,170 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Lexend Deca", sans-serif;
+}
+
+::before,::after{
+   box-sizing: border-box;
+}
+
+:root{
+   --bg:#dfe6e9;
+   --white-color:#fff;
+   --primary-color:#1e90ff;
+   --error:red;
+   --border-color:rgba(0,0,0,0.2);
+   --border-r:2px;
+   --letter-spacing:0.3px;
+   --black:#000;
+}
+
+body{
+   background: var(--bg);
+   font-weight: 500;
+}
+
+h1{
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+p{
+   color: var(--error);
+}
+
+input,button{
+   outline: none;
+   border: 0;
+}
+
+#error_email,#error_name,#error_number{
+   text-align: left;
+   font-size: 13px;
+   margin-top: 5px;
+   font-weight: 400;
+}
+
+#sign-p{
+   color: var(--black);
+}
+
+#form-container{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+#form{
+   width: 400px;
+   height: auto;
+   background: #fff;
+   text-align: center;
+   padding: 15px;
+   border-radius: 5px;
+   position: relative;
+}
+
+.input-box{
+   width: 100%;
+   height: 50px;
+   margin: 30px 0;
+}
+
+.input-box input{
+   width: 100%;
+   height: 100%;
+   border: 1px solid var(--border-color);
+   padding: 0 45px 0 10px;
+   border-radius: var(--border-r);
+}
+
+.input-box i{
+   position: absolute;
+   right: 30px;
+   font-size: 23px;
+   line-height: 50px;
+}
+
+.input-box button{
+   width: 100%;
+   height: 100%;
+   font-size: 17px;
+   font-weight: 400;
+   color: var(--white-color);
+   background: var(--primary-color);
+   border-radius: var(--border-r);
+   cursor: pointer;
+}
+
+.pass-indicator{
+   width: 100%;
+   height: 100%;
+   margin-top: 5px;
+   display: flex;
+   gap: 10px;
+   flex-direction: column;
+}
+
+.main-indicator{
+   width: 0%;
+   height: 3px;
+   background: yellow;
+   border-radius: 50px;
+   transition: .6s ease;
+}
+
+#indicator-text{
+   color: black;
+   text-align: left;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.show-hide{
+   cursor: pointer;
+}
+
+.btn{
+   margin-top: 50px;
+}
+
+.sign-with{
+   margin: 0 0 20px 0;
+   padding: 0;
+   width: 100%;
+   height: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 18px;
+}
+
+#sign-p{
+   font-size: 16px;
+}
+
+.icons i{
+   font-size: 28px;
+   margin: 0 10px;
+   cursor: pointer;
+   color: var(--primary-color);
+
+}
+
+
+@media screen and (max-width:500px){
+   #form{
+      margin: 0 15px;
+   }
+
+   h1{
+      font-size: 1.8rem;
+   }
+}
